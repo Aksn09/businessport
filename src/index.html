@@ -1,4 +1,75 @@
-<html>
+<!doctype html>
 
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <title>Maa Karuna Enterprises</title>
+  <meta name="description" content="Maa Karuna Enterprises">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Tinos&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+  <div class="w3-top">
+        <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+          <a href="#home" class="w3-bar-item w3-button"><b>MAAKARUNA</b> ENTERPRISES</a>
+          <!-- Float links to the right. Hide them on small screens -->
+          <div class="w3-right w3-hide-small">    
+            <a href="#projects" class="w3-bar-item w3-button">Projects</a>
+            <a href="#about" class="w3-bar-item w3-button">About</a>
+            <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+            <a href="#team" class="w3-bar-item w3-button">Team</a>
+          </div>
+        </div>
+  </div>
+
+  <section>
+    <!-- only for handling the section which goes inside the nav bar
+      if we remove this line.  
+    TODO - fix this issue -->
+    <p>sdfnie </p> 
+  </section>
+
+  <section>
+    <div class="sld">
+      <img class="mySlides" src="images\20210415_102951.jpg" >
+      <img class="mySlides" src="images\20210415_103253.jpg" >
+      <img class="mySlides" src="images\20210415_103257.jpg" >
+      <img class="mySlides" src="images\20210415_103314.jpg" >
+      <img class="mySlides" src="images\20210415_103327.jpg" >
+      <img class="mySlides" src="images\20210415_103334.jpg" >
+      <img class="mySlides" src="images\20210415_103512.jpg" >
+    </div>
+  </section>
+
+  <script>
+    
+    // Automatic Slideshow - change image every 3 seconds
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}
+      x[myIndex-1].style.display = "block";
+      setTimeout(carousel, 5000);
+    }
+  
+  </script>
+
+  </body>
 </html>
