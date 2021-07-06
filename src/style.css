@@ -1,3 +1,9 @@
+html, body {
+    font-family: Verdana,sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    }
+
 .sld{
     background-color: white;   
 }
@@ -12,3 +18,32 @@
 
     position: relative;    
 }
+
+/* contact us css */
+.cu-out{
+    text-align: center;
+  }
+  .cu-main{
+    font-family: 'Encode Sans SC', sans-serif;
+     font-size: 3.75rem;
+  }
+  .cu-content{  
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 5px;
+    }
+  /* .cu-layout{
+  }
+  .cu-add{
+    float:left;
+    margin:60px;
+    
+  }
+  .cu-p{
+    float:left;
+    margin:60px;
+  }
+  .cu-e{
+    float:left;
+    margin:60px;
+  } */
